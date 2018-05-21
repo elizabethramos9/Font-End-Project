@@ -1,0 +1,52 @@
+header{
+  background-color: gold;
+  padding-left: 150px;
+}
+
+h1{
+  margin: 0;
+  padding: 10px;
+  color: #000;
+
+}
+
+.navigation-pane {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 150px;
+    background-color: #f1f1f1;
+    height: 100%; /* Full height */
+    position: fixed; /* Make it stick, even on scroll */
+    overflow: auto; /* Enable scrolling if the sidenav has too much content */
+}
+
+li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color on hover */
+li a:hover {
+    background-color: #555;
+    color: gold;
+}
+
+.welcome-content{
+  margin-left: 150px;
+  padding-left: 10px;
+}
+
+/* Fix footer to bottom of page*/
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #555;
+    color: gold;
+    text-align: center;
+    padding: 20px;
+}
