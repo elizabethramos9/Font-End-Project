@@ -5,6 +5,8 @@
 	<title>Felogger</title>
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="js/javascript.js"></script>
 </head>
 <body>
   <header class="main-header">
@@ -13,17 +15,16 @@
 
   <div class="navigation-pane">
     <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="LogEntries.html">Log Entries</a></li>
-      <li><a href="#">Reports</a></li>
-      <li><a href="#">About</a></li>
+      <li class="nav-link" id="nav-first-link"><a class="nav-link" href="index.html">Home</a></li>
+      <li class="nav-link"><a class="nav-link" href="LogEntries2.html">Log Entries</a></li>
+      <li class="nav-link"><a class="nav-link" href="#">Reports</a></li>
+      <li class="nav-link"><a class="nav-link" href="#">About</a></li>
     </ul>
   </div>
-  <div class="welcome-content">
-		<img class="sadpepper" src="img/paprika-sad-food-veggie-161019.jpeg">
-  </div>
 
-	<form class="log-entries" action="index.html" method="post">
+
+
+  <form id="log-entries" method="post">
 			 <h1>Log your food entries here.</h1>
 
 
@@ -43,11 +44,11 @@
 						 <option value="italian">Italian</option>
 						 <option value="korean">Korean</option>
 						 <option value="pizza">Pizza</option>
-						 <option value="vietnamese">Vitenamese</option>
+						 <option value="vietnamese">Vietnamese</option>
 						 <option value="thai">Thai</option>
 						 <option value="japanese">Japanese</option>
 						 <option value="chinese">Chinese</option>
-						 <option value="Sushi-bars">Sushi Bars</option>
+						 <option value="sushi-bars">Sushi Bars</option>
 				 </select>
 
 				 <label for="restuarant">Name of restuarant:</label>
@@ -78,17 +79,12 @@
 		 </fieldset>
 
 
-		 <button type="submit" id="formButton">Submit</button>
+		 <button type="button" id="formButton">Submit</button>
 	</form>
-
+	<div id="panel">Food entry has been logged.</div>
+  <!--<div id="panel">Food entry has been logged.</div> -->
 
   <div class="footer">
     this is the footer
   </div>
-	<script>
-		document.getElementById('formButton').addEventListener('click', function(event) {
-			event.preventDefault();
-			console.log('clicked the button!!!')
-		})
-	</script>
 </body>
