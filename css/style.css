@@ -16,38 +16,42 @@ h1{
 
 }
 
-
-
+/*image on home page*/
 .happybreakfast {
   display: block;
-  width: 18em;
+  width: 20em;
   margin-left: auto;
   margin-right: auto;
 }
-/*
-#nav-first-link{
-  margin-top: 56px;
-}
-*/
 
-.nav-link {
-  display: block;
-  height: 3em;
-  line-height: 3em;
-  text-decoration: none;
-  font-size: 12pt;
-}
+
 
 .navigation-pane {
+  display: block;
   margin-top: 56px;
   text-align: center;
+}
+
+.nav-link {
+  width: 50%;
+  margin: auto;
+  float: left;
+}
+
+.nav-link-a {
+  width: 100%;
+  display: inline-block;
+  text-decoration: none;
+  height: 3em;
+  line-height: 3em;
+  font-size: 12pt;
+
 }
 
 
 
 #welcome {
   display: inline-block;
-  margin-top: 66px;
   text-align: center;
 }
 
@@ -109,11 +113,16 @@ label {
   }
 
   .nav-link {
-      display: block;
-      color: #000;
-      padding: 8px 16px;
-      text-decoration: none;
-      margin-top: 0;
+    width: 100%;
+    display: block;
+  }
+
+  .nav-link-a {
+    text-decoration: none;
+    height: 3em;
+    line-height: 3em;
+    font-size: 12pt;
+
   }
 
   #log-entries {
@@ -124,20 +133,23 @@ label {
   }
 
 
+/*image on home page*/
   .happybreakfast {
     width: 50em;
     padding-top: 150px;
 
   }
+
+  /*displays navigation pane to the left of the viewport*/
   .navigation-pane {
-      list-style-type: none;
-      margin: 56px 0 0 0;
-      padding: 0;
-      width: 150px;
-      background-color: #f1f1f1;
-      height: 100%; /* Full height */
-      position: fixed; /* Make it stick, even on scroll */
-      overflow: auto; /* Enable scrolling if the sidenav has too much content */
+    display: block;
+    list-style-type: none;
+    padding: 0;
+    width: 150px;
+    background-color: #f1f1f1;
+    height: 100%; /* Full height */
+    position: fixed; /* Make it stick, even on scroll */
+    overflow: auto; /* Enable scrolling if the sidenav has too much content */
   }
 
 }
